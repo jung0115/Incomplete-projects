@@ -1,3 +1,11 @@
-.mainTitle {
-    text-align: center;
+/*화면 크기를 반응형으로. 가로는 100vw, 세로는 100vh가 최대로 디스플레이 크기에 맞게 비율이 유지됨.*/
+.startScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+/*.startTitle {
+    
+}*/
