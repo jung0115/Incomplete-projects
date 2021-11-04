@@ -32,18 +32,21 @@
     <div class="mainScreen">
         <header>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="web-button"> <!-- 페이지 상단 메뉴, 검색, 마이페이지 버튼 -->
-                    <button type="button" class="menu-button"><i class="bi bi-list"></i></button>
-                    <button type="button" class="search-button"><i class="bi bi-search"></i></button>
-                    <button type="button" class="mypage-button"><i class="bi bi-archive"></i></button>
+                <!-- 페이지 상단 메뉴, 검색, 마이페이지 버튼 -->
+                <div class="web-button">
+                    <button type="button" class="menu-button" onclick="alert('menu');"><i class="bi bi-list"></i></button>
+                    <button type="button" class="mypage-button" onclick="alert('mypage');"><i class="bi bi-archive"></i></button>
+                    <button type="button" class="search-button" onclick="alert('search');"><i class="bi bi-search"></i></button>
                 </div>
-                <div class="carousel-indicators"> <!-- 슬라이드 하단 버튼 -->
-                    <!--이미지 갯수 유동적으로 변경 필요-->
+                <!-- 슬라이드 하단 버튼 -->
+                <div class="carousel-indicators">
+                    <!--이미지 갯수 및 버튼 유동적으로 변경 필요-->
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner"> <!-- 슬라이드 이미지 -->
+                <!-- 슬라이드 이미지 -->
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../slideImages/sample1.png" class="d-block w-100 height" alt="광고1">
                     </div>
@@ -54,11 +57,13 @@
                         <img src="../slideImages/sample3.png" class="d-block w-100 height" alt="광고3">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> <!-- 슬라이드 좌측 버튼-->
+                <!-- 슬라이드 좌측 버튼-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> <!-- 슬라이드 우측 버튼 -->
+                <!-- 슬라이드 우측 버튼 -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
