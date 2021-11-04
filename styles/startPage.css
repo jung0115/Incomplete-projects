@@ -6,6 +6,9 @@
     align-items: center;
     justify-content: center;
 }
+body {
+    overflow: hidden;
+}
 /*.startTitle {
     
 }*/
