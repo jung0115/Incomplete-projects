@@ -102,8 +102,11 @@
     width: 30vw;
     height: 30vh;
 }
-/*웹툰 설명 글자*/
-.webtoon-info {
-    font-size: 3vw;
-    font-family: 'IBM Plex Sans KR', sans-serif;
+/*웹툰 이미지에 hover시 웹툰 정보 나타남*/
+.webtoon-box {
+    position: relative;
+}
+.webtoon-box:hover .webtoon-info {
+    opacity: 1;
+    text-align: center;
 }
