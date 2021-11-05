@@ -1,6 +1,6 @@
 /*간격, 크기 등 모든 사이즈는 가변적(반응형)으로 설정*/
 
-/*가로 길이는 화면 크기를 벗어나지 않게 min-width를 지정*/
+/*가로 길이는 화면 크기를 벗어나지 않게 max-width를 지정*/
 .main-screen {
     display: grid;
     max-width: 100vw;
@@ -60,6 +60,7 @@
     background-size: 10px 10px;
     background-color: #a99cff;
     border-radius: 30%;
+    color: #fbfaff !important;
 }
 /*웹툰 카테고리(요일, 신작, 완결) 버튼(a 태그) 정렬*/
 .category-list {
@@ -72,6 +73,37 @@
 .category {
     padding: 0 2.4vw 0 2.4vw;
     margin: 1.5vw 0 1.5vw 0;
+    color: #a99cff;
     font-size: 5vw;
     font-family: 'Do Hyeon', sans-serif;
+}
+/*웹툰 카테고리 버튼에 a태그 기본 스타일 제거*/
+.category > a {
+    color: #a99cff;
+    text-decoration: none !important;
+}
+
+/*ul 태그 시작점을 0px로 해서 왼쪽 공백 없애기*/
+.wetoon-list {
+    -webkit-padding-start: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/*웹툰 이미지 정렬*/
+.webtoon {
+    list-style: none; /*리스트 점 없애기*/
+    float: left;
+    padding: 0;
+    margin: 0 1.5vw 2vh 1.5vw;
+}
+/*웹툰 이미지 크기 조정*/
+.webtoon-image {
+    object-fit: cover;
+    width: 30vw;
+    height: 30vh;
+}
+/*웹툰 설명 글자*/
+.webtoon-info {
+    font-size: 3vw;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
