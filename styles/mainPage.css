@@ -33,7 +33,7 @@
 .search-button {
     padding: 0.9vh;
 }
-/*검색 버튼, 마이페이지 버튼 왼쪽 정렬*/
+/*검색 버튼, 마이페이지 버튼 우측 정렬*/
 /*우측 정렬 되면 html 파일에서 먼저 적혀있는 버튼이 더 우측으로 감*/
 .search-button,
 .mypage-button {
@@ -56,7 +56,7 @@
 }
 /*선택된 카테고리 표시(배경색, 둥글게)*/
 .check {
-    background-size: 10px 10px;
+    background-size: 10vw 10vh;
     background-color: #a99cff;
     border-radius: 30%;
     color: #fbfaff !important;
@@ -67,6 +67,7 @@
     justify-content: space-evenly; /*아이템(카테고리 버튼) 사이와 양 끝에 균일한 간격을 만들어 줌*/
     list-style: none; /*리스트 점 없애기*/
     padding: 0;
+    margin: 0 0 2vw 0;
 }
 /*웹툰 카테고리 마진&패딩(선택된 거 배경색 줄 때 모양 잡는 의도), 폰트 사이즈, 글꼴 설정*/
 .category {

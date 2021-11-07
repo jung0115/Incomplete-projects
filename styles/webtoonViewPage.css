@@ -44,9 +44,105 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr
 }
-.webtoon-info {
+.right-contents {
     display: flex;
     flex-direction: column; /*요소들이 수직으로 정렬됨*/
     align-items: left;
     justify-content: center;
+    margin: 3vw;
+}
+.webtoon-explain {
+    margin: 2vw
+}
+/*웹툰 설명 부분*/
+.webtoon-title,
+.webtoon-writer,
+.webtoon-score {
+    font-size: 3.5vw;
+}
+/*첫편부터 보기, 이어보기 버튼 스타일 지정*/
+.start-button,
+.continue-button {
+    background-size: 20vw 10vh;
+    background-color: #a99cff;
+    border: none;
+    border-radius: 20%;
+    color: white;
+    font-size: 3.8vw;
+    font-family: 'Do Hyeon', sans-serif;
+    padding: 1vh 2vw 1vh 2vw;
+}
+
+/*구분선*/
+.line {
+    width: 100vw;
+    height: 0.3vw;
+    background-color: #d9d9d9;
+}
+
+/*전체 웹툰 수 표시, 첫편,최신편 선택 버튼 한 줄에 나오게 하기*/
+.button-line {
+    display: flex;
+    width: 100vw;
+}
+/*첫편부터, 최신편부터 선택 버튼 우측 정렬*/
+.select-sequence {
+    margin: 2.2vw;
+    margin-left: auto
+}
+/*전체 웹툰 수 표시 글자 색, 크기*/
+.webtoon-num {
+    margin: 2.2vw;
+    color: #b0b0b0;
+    font-size: 4vw;
+}
+/*select box 스타일*/
+.sequence {
+    border: none;
+    color: #b0b0b0;
+    background-color: white;
+    width: 25vw;
+    height: 3.5vh;
+    font-size: 4vw;
+}
+
+/*ul 태그 시작점을 0px로 해서 왼쪽 공백 없애기*/
+.wetoon-list {
+    -webkit-padding-start: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/*웹툰 이미지 정렬*/
+.webtoon {
+    list-style: none; /*리스트 점 없애기*/
+    float: left;
+    padding: 0;
+    margin: 1vh 1.5vw 1vh 1.5vw;
+}
+/*웹툰 이미지 크기 조정*/
+.webtoon-image {
+    object-fit: cover;
+    width: 30vw;
+    height: 30vw;
+    background: url(../webtoonImages/webtoon-viewImage.jpg); /*웹툰 이미지를 배경으로*/
+    background-size: cover;
+    background-position: center center;
+}
+/*웹툰 이미지에 hover시 웹툰 정보 나타남*/
+.webtoon-info {
+    background: #000000;
+    opacity: 0;
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.webtoon-image:hover .webtoon-info {
+    opacity: 0.3;
+    text-align: center;
+    color: #ffffff;
+}
+.webtoon > a {
+    text-decoration: none !important;
 }
