@@ -1,4 +1,10 @@
 /*간격, 크기 등 모든 사이즈는 가변적(반응형)으로 설정*/
+/*css 변수 지정*/
+:root {
+    --main-purple: #a99cff;
+    --main-white: #fbfaff;
+    --main-black: #000000;
+}
 
 /*가로 길이는 화면 크기를 벗어나지 않게 max-width를 지정*/
 .main-screen {
@@ -52,14 +58,14 @@
 
 /*카테고리 버튼 영역 배경색*/
 .webtoon-category {
-    background-color: #fbfaff;
+    background-color: var(--main-white);
 }
 /*선택된 카테고리 표시(배경색, 둥글게)*/
 .check {
     background-size: 10vw 10vh;
-    background-color: #a99cff;
+    background-color: var(--main-purple);
     border-radius: 30%;
-    color: #fbfaff !important;
+    color: var(--main-white) !important;
 }
 /*웹툰 카테고리(요일, 신작, 완결) 버튼(a 태그) 정렬*/
 .category-list {
@@ -73,7 +79,7 @@
 .category {
     padding: 0 2.4vw 0 2.4vw;
     margin: 1.5vw 0 1.5vw 0;
-    color: #a99cff;
+    color: var(--main-purple);
     font-size: 5vw;
     font-family: 'Do Hyeon', sans-serif;
     text-decoration: none !important; /*a태그 밑줄 제거*/
@@ -82,9 +88,9 @@
 .category:hover,
 .category:visited {
     background-size: 10px 10px;
-    background-color: #a99cff;
+    background-color: var(--main-purple);
     border-radius: 30%;
-    color: #fbfaff !important;
+    color: var(--main-white) !important;
 }
 
 /*ul 태그 시작점을 0px로 해서 왼쪽 공백 없애기*/
@@ -111,7 +117,7 @@
 }
 /*웹툰 이미지에 hover시 웹툰 정보 나타남*/
 .webtoon-info {
-    background: #000000;
+    background: var(--main-black);
     opacity: 0;
     width: 30vw;
     height: 30vh;
@@ -122,7 +128,7 @@
 .webtoon-image:hover .webtoon-info {
     opacity: 0.3;
     text-align: center;
-    color: #ffffff;
+    color: var(--main-white);
 }
 .webtoon > a {
     text-decoration: none !important;
