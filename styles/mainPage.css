@@ -75,11 +75,15 @@
     color: #a99cff;
     font-size: 5vw;
     font-family: 'Do Hyeon', sans-serif;
+    text-decoration: none !important; /*a태그 밑줄 제거*/
 }
-/*웹툰 카테고리 버튼에 a태그 기본 스타일 제거*/
-.category > a {
-    color: #a99cff;
-    text-decoration: none !important;
+.category:active,
+.category:hover,
+.category:visited {
+    background-size: 10px 10px;
+    background-color: #a99cff;
+    border-radius: 30%;
+    color: #fbfaff !important;
 }
 
 /*ul 태그 시작점을 0px로 해서 왼쪽 공백 없애기*/

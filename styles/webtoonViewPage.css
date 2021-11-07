@@ -31,3 +31,22 @@ header {
     font-size: 7vw;
     color: white;
 }
+
+/*웹툰 이미지 비율 고정*/
+.image-size {
+    object-fit: cover;
+    width: 50vw;
+    height: 21vh;
+    padding: 4vw;
+}
+/*웹툰 이미지는 왼쪽, 웹툰 정보는 오른쪽에 배열*/
+.webtoon-start {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+.webtoon-info {
+    display: flex;
+    flex-direction: column; /*요소들이 수직으로 정렬됨*/
+    align-items: left;
+    justify-content: center;
+}
