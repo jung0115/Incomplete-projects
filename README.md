@@ -10,6 +10,6 @@ News Letter App with JH
   
 **디자인: And Kim / 개발: 조정미**  
 
-## 개발 환경
+### 개발 환경
 - VSCode
 - ReactNative
