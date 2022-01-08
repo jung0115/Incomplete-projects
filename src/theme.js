@@ -1,3 +1,3 @@
-const colors = {
-
+export const theme = {
+    background: '#ffffff',
 };
