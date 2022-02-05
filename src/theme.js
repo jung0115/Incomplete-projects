@@ -1,3 +1,4 @@
 export const theme = {
-    background: '#ffffff',
+    mainBackground: '#ffffff',
+    loadingBackground: '#9cfffd',
 };

@@ -1,23 +1,24 @@
-import React from 'react';
-import { Text } from 'react-native';
-import styled, { ThemeProvider } from 'styled-components/native';
+import React, { useEffect, useState } from 'react';
+import { ThemeProvider } from 'styled-components/native';
 import { theme } from './theme';
-
-const Container = styled.View`
-  flex: 1;
-  background-color: ${({ theme }) => theme.background};
-  align-items: center;
-  justify-content: center;
-`;
+import Loading from './components/Loading';
+import Main from './components/Main';
 
 const App = () => {
-  return (
+  //로딩 화면을 사용하기 위해 컴포넌트에 상태값을 만들어줌.
+  const [ready, setReady] = useState(true);
+  
+  useEffect(() => {
+    setTimeout(() => { //1초 뒤에 해당 코드를 실행
+      //setState(data)
+      setReady(false)
+    }, 1000) //1000 = 1초
+  }, [])
+
+  return ready ?
+    <Loading />: (
     <ThemeProvider theme={theme}>
-        <Container>
-          <Text>아이콘</Text>
-          <Text>실시간 인기</Text>
-          <Text>추천 레터</Text>
-        </Container>
+      <Main />
     </ThemeProvider>
   );
 }
