@@ -12,7 +12,7 @@ const App = () => {
     setTimeout(() => { //1초 뒤에 해당 코드를 실행
       //setState(data)
       setReady(false)
-    }, 1000) //1000 = 1초
+    }, 3000) //1000 = 1초
   }, [])
 
   return ready ?
