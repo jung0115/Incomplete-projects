@@ -4,13 +4,13 @@ import styled from 'styled-components/native';
 
 const Container = styled.SafeAreaView`
     flex: 1;
-    background-color: #9cfffd;
+    background-color: #ffffff;
     align-items: center;
     justify-content: center;
 `;
 const Image = styled.Image`
-    width: 100px;
-    height: 100px;
+    width: 144px;
+    height: 120px;
 `;
 
 const animationImages = [
