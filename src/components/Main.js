@@ -5,7 +5,7 @@ import { Text } from 'react-native';
 
 const Container = styled.View`
   flex: 1;
-  background-color: ${({ theme }) => theme.mainBackground};
+  background-color: ${({ theme }) => theme.background};
   align-items: center;
   justify-content: center;
 `;

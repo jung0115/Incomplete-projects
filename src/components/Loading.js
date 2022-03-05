@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 
 const Container = styled.SafeAreaView`
     flex: 1;
-    background-color: #ffffff;
+    background-color: ${({ theme }) => theme.background};
     align-items: center;
     justify-content: center;
 `;
@@ -20,7 +20,6 @@ const animationImages = [
     require("./Assets/Images/Loading3.png"),
     require("./Assets/Images/Loading2.png"),
     require("./Assets/Images/Loading1.png"),
-
 ];
 
 const Loading = () => {     

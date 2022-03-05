@@ -1,4 +1,5 @@
 export const theme = {
-    mainBackground: '#ffffff',
-    loadingBackground: '#9cfffd',
+    background: '#ffffff',
+    loginTextBox: '#e5e5e5',
+    loginButton: '#231815'
 };

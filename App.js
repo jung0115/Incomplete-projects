@@ -18,6 +18,9 @@ npm install --save --legacy-peer-deps styled-components
 prop-types 라이브러리 설치
 npm install prop-types
 
+react-native-svg 설치
+npm install react-native-svg
+
 파이어베이스 라이브러리 설치
 expo install firebase
 
