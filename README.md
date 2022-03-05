@@ -23,4 +23,4 @@ News Letter App with JH
 |- |- Main.js  
 |- App.js  
 |- theme.js  
-&#45;  
+&#45; App.js  
