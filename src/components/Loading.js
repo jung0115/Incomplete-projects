@@ -14,12 +14,12 @@ const Image = styled.Image`
 `;
 
 const animationImages = [
-    require("./Assets/Images/Loading0.png"),
-    require("./Assets/Images/Loading1.png"),
-    require("./Assets/Images/Loading2.png"),
-    require("./Assets/Images/Loading3.png"),
-    require("./Assets/Images/Loading2.png"),
-    require("./Assets/Images/Loading1.png"),
+    require("../assets/Images/Loading0.png"),
+    require("../assets/Images/Loading1.png"),
+    require("../assets/Images/Loading2.png"),
+    require("../assets/Images/Loading3.png"),
+    require("../assets/Images/Loading2.png"),
+    require("../assets/Images/Loading1.png"),
 ];
 
 const Loading = () => {     
