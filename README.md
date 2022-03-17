@@ -17,7 +17,9 @@ News Letter App with JH
 ### Project  
 &#45; src  
 |- components  
-|- |- Assets / Images  
+|- |- assets
+|- |- |- fonts  
+|- |- |- Images  
 |- |- Loading.js  
 |- |- Login.js  
 |- |- Main.js  
