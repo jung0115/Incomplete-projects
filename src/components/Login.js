@@ -90,7 +90,7 @@ const LoginText = styled.Text`
     font-family: 'NotoSansCJKkr-Medium';
     color: white;
 `;
-// 이메일, 비번 찾기 문구
+// 이메일, 비번 찾기 text
 // 가입 문구
 
 class Login extends React.Component {
