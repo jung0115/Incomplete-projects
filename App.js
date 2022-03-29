@@ -27,4 +27,7 @@ expo install firebase
 npm install react-native-keyboard-aware-scroll-view
 
 expo install expo-app-loading
+
+키보드 스크롤
+npm i react-native-keyboard-aware-scroll-view --save
 */

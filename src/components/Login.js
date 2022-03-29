@@ -5,6 +5,7 @@ import { StyleSheet } from 'react-native';
 import { Svg, Line } from 'react-native-svg';
 import * as Font from 'expo-font';
 import Loading from './Loading';
+//import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 // 전체
 const Container = styled.SafeAreaView`
@@ -63,7 +64,7 @@ const Logo = styled.Image`
 `;
 // 환영 문구
 const Welcome = styled.Image`
-    width: 109.44px;
+    width: 111px;
     height: 20.48px;
     margin: 2% 0 0 15%;
 `;
@@ -189,7 +190,7 @@ class Login extends React.Component {
                         {this.renderPasswordInput()}
                     </PasswordView>
                     <LoginView>
-                        <LoginButton style={styles.button}>
+                        <LoginButton style={styles.button} activeOpacity={1}>
                             <LoginText>로그인</LoginText>
                         </LoginButton>
                     </LoginView>
